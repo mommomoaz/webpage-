@@ -4,40 +4,55 @@
    <title>2022년 공부계획</title>
    <meta charset="utf-8">
   <style>
-    body{
-      margin:0;
+  body{
+    margin:20;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  h1 {
+    font-size:45px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+  }
+  ol{
+    border-right:1px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left:33px;
+  }
+  #grid #article{
+    padding-left:25px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display: block;
     }
-
-     a{
-      color:pink;
-      border:5px solid pink
-      display:block;
-      width:20px;
-   }
-     h1{
-      border-bottom:5px solid green;
-      font-size: 48px;
-      text-align: center;
-      padding:20px;
-      margin:0;
-      padding:20px;
-     }
-     .huchu{ color: gray;}
-     #active {color: red;}
-     ol{
-       display:inline-block;
-       border-right:5px solid green;
-       border-bottom:5px solid green;
-       width:100px;
-       margin:0;
-       padding:20px;
-
-     }
+    ol{
+      border-right:none;
+    }
+    h1 {
+      border-bottom:none;
+    }
+  }
 </style>
 </head>
 
 <body>
-  <h1 class="huchu">2022년 공부계획</h1>
+  <div>
+     Responsive
+   </div>
+  <h1 class="grid">2022년 공부계획</h1>
 <ol>
     <li><strong><a href="2.html"class="huchu">코딩</a></strong></li>
     <li><strong><a href="3.html"class="huchu" id="active">영어</a></strong></li>
@@ -50,27 +65,8 @@
 
 
 
-
-</body>
-<html>
-
-  <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://web-bin-1.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-Copy
+</p>
+     </div>
+ </div>
+ </body>
+ </html>
