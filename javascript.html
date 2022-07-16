@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <script>
+        id = prompt('아이디를 입력해주세요.')
+        if(id=='egoing'){
+            alert('아이디가 일치 합니다.')
+        } else {
+            alert('아이디가 일치하지 않습니다.')
+        }
+        id = prompt('아이디를 입력해주세요.');
+ if(id=='egoing'){
+     password = prompt('비밀번호를 입력해주세요.');
+     if(password==='111111'){
+         alert('인증 했습니다.');
+     } else {
+         alert('인증에 실패 했습니다.');
+     }
+ } else {
+     alert('인증에 실패 했습니다.');
+ }
+ if(true && true){
+    alert(1);
+}
+if(true && false){
+    alert(2);
+}
+if(false && true){
+    alert(3);
+}
+if(false && false){
+    alert(4);
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <script>
+        id = prompt('아이디를 입력해주세요.');
+        password = prompt('비밀번호를 입력해주세요.');
+        if(id=='egoing' && password=='111111'){
+            alert('인증 했습니다.');
+        } else {
+            alert('인증에 실패 했습니다.');
+        }
+        id = prompt('아이디를 입력해주세요.');
+password = prompt('비밀번호를 입력해주세요.');
+if((id==='egoing' || id==='k8805' || id==='sorialgi') && password==='111111'){
+    alert('인증 했습니다.');
+} else {
+    alert('인증에 실패 했습니다.');
+}
+
+//while 문
+//while(조건){
+// 반복해서 실행할 코드
+//}
+//조건이 true일경우, 반복해서 실행할 코드를 트루에서 펄스가 될때가지 무한루프
+//document.write 쓰면
+//<br /> 줄바꿈을 의미하는 HTML 태그
+var i= 0;
+while(i<10){
+  document.write('coding everybody<br />');
+  i++
+}
+/*
+for sentence
+for(초기화; 반복조건; 반복이 될 때마다 실행되는 코드){
+    반복해서 실행될 코드
+*/
+for(var i = 0; i<10; i++){
+  document.write('coding everybody'+i+<br />');
+}
+for(var i = 0; i < 10; i++){
+    if(i === 5) {
+        break;
+    }
+    document.write('coding everybody'+i+'<br />');
+}
+
+/*
+반복문은 제어가능하다. break;를 하면 멈춰라 라는것.
+*/
+for(var i = 0; i < 10; i++){
+for(var j = 0; j < 10; j++){
+  document.write(String(i)+String(j)+'<br />');
+    }
+}
+    </script>
+</body>
+</html>
+    </script>
+</body>
+</html>
