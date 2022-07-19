@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+//자바스크립트의 객체는 key 와 value로 구성된 property들의 집합이며, 배열과는 달리 객체는 프로퍼티를 열거할때
+순서를 보장하지 않는다. js의 객체의 key는 문자형으로 변형된다.
+<script>
+  var coworkers = {
+    "programmer": "egoing",
+    "designer": "leezche"
+  };
+
+  for(var key in coworkers) {
+    document.write(key+'<br>');
+  }
+
+  for(var key in coworkers) {
+  document.write(coworkers[key]+'<br>');
+}
+
+
+
+
+</script>
+
+  </body>
+</html>
